@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  
+  overflow: hidden;
 }
 
 
@@ -33,7 +33,21 @@ p {
 
 .URL {
   color: #739BFF;
-  font-size: 9px;
+  font-size: 12px;
+}
+
+.searchQuery {
+  color: #739BFF;
+}
+
+.pSearchQuery {
+  font-weight: 800;
+  font-size: 30px;
+  border-radius: 0px 20px 20px 0px;
+  padding: 5px;
+  background-color: #739BFF;
+  color: #FFF;
+
 }
 .site{
   display: flex;
@@ -54,7 +68,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .App-link {

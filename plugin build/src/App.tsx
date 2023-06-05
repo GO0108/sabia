@@ -1,7 +1,6 @@
-
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import { getCurrentTabUId, getCurrentTabUrl, getUrlDomain } from "./chrome/utils";
+import { getCurrentTabUId, getCurrentTabUrl, getSearchQuery, getUrlDomain } from "./chrome/utils";
 import { ChromeMessage, Sender } from "./types";
 
 function App() {
@@ -16,14 +15,7 @@ function App() {
     getCurrentTabUrl((url) => {
       setUrl(url || "undefined");
     });
-    // let domain = getUrlDomain(url);
 
-  }, []);
-
-  useEffect(() => {
-    //getUrlDomain((url) => {
-    //  setWebsite(url || "undefined"); 
-    //})
   }, []);
 
   return (
@@ -34,6 +26,10 @@ function App() {
           <h1>Site atual</h1>
           <p className="websiteName">{getUrlDomain(url)}</p>
         </div>
+          <div>
+          <p className="pSearchQuery">pesquisa atual</p>
+          <h2 className="searchQuery">{getSearchQuery(url)?.replaceAll('+', ' ')}</h2>
+          </div>
       </header>
     </div>
   );
