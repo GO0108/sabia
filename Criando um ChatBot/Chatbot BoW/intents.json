@@ -1,0 +1,92 @@
+{
+  "intents": [
+    {
+      "tag": "saudacoes",
+      "patterns": [
+        "Olá",
+        "Oi",
+        "Como você está",
+        "Oiee",
+        "eae",
+        "Bom dia!"
+      ],
+      "responses": [
+        "Oi :)",
+        "Como vai você?",
+        "Olá, como posso te ajudar ?",
+        "Oi, o que você precisa ? :)"
+      ]
+    },
+    {
+      "tag": "despedida",
+      "patterns": ["Tchau", "flw", "até mais", "Adeus"],
+      "responses": [
+        "Te vejo mais tarde ! Obrigado por visitar :)",
+        "Tenha um bom dia",
+        "Adeus! Espero te ver mais tarde."
+      ]
+    },
+    {
+      "tag": "agradecer",
+      "patterns": ["Obrigado", "obg", "isso ajudou", "vlw", "Muito obrigado"],
+      "responses": ["Fico feliz em ajudar !", "O prazer é meu!", "O prazer é meu"]
+    },
+    {
+      "tag": "ajuda",
+      "patterns": [
+        "o que voce faz ?",
+        "como voce pode me ajudar ?",
+        "me ajude"
+      ],
+      "responses": [
+        "Posso te dar dicar de pesquisa !",
+        "Me pergunte sobre alguma dúvida de pesquisa que lhe ajudo !"
+      ]
+    },
+    {
+      "tag": "pesquisa",
+      "patterns": [
+        "Como pesquisar melhor ?",
+        "Como pesquisar precisamente",
+        "Dicas para pesquisa",
+        "Como pesquisar"
+      ],
+      "responses": [
+        "Busque de maneiras simples e gradualmente adicione termos ",
+        "Filtre conteúdo explícito, por língua, por tempo e etc. Me pergunte mais sobre isso :)"
+      ]
+    },
+    {
+      "tag": "palavras",
+      "patterns": [
+        "Dicas de palavras chave",
+        "Como filtrar conteúdo",
+        "Me dê exemplos",
+        "Me dê dicas de pesquisa",
+        "mais exemplos"
+      ],
+      "responses": [
+        "Utilize aspas duplas para pesquisar literalmente por um termo",
+        "Utilize ~ para achar um termo de significado similar a palavra",
+        "Utilize - para excluir certo termo dos resultados",
+        "Utilize operadores lógicos como AND e OR para filtrar resultados",
+        "Utilize () para agrupar múltiplas pesquisas",
+        "Utilize site: antes do termo para filtrar um site específico em seu resultado",
+        "Utilize ext: antes de um termo para filtrar o tipo de documento que você deseja receber"
+      ]
+    },
+    {
+      "tag": "engracado",
+      "patterns": [
+        "Me conte uma piada",
+        "outra piada",
+        "Me fale algo engraçado",
+        "sabe de alguma piada"
+      ],
+      "responses": [
+        "Era uma vez um pintinho que se chama Relam. Toda vez que chovia, Relam piava !",
+        "Por que o menino estava falando ao telefone deitado? Para não cair a ligação."
+      ]
+    }
+  ]
+}
