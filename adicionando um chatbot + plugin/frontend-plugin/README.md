@@ -8,17 +8,16 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-<a name="_j4j6z7ys9fds"></a>Importando para o navegador
+# Importando para o navegador
 
-`	`Agora vamos seguir para a importação:
+Agora vamos seguir para a importação:
 
 1. No chrome ou qualquer navegador de base chromium, procurar onde gerencia as extensões
-1. ativar modo desenvolvedor
-
-1. “Carregar sem Compactação”> “Compactar Extensão” > “Atualizar”
-
-
-1. Executar a extensão no ícone na barra do navegador
+2. ativar modo desenvolvedor
+3. “Carregar sem Compactação”> “Compactar Extensão” > “Atualizar”
+4. selecione a pasta "build"
+   
+5. Execute a extensão no ícone na barra do navegador
 
 
 Extensão funcionando!
