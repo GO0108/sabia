@@ -4,16 +4,16 @@ export {};
  *  when the extension is updated to a new version,
  *  and when Chrome is updated to a new version. */
 
-chrome.runtime.onInstalled.addListener((details) => {
-  if (details.reason === "install") {
+chrome.runtime.onInstalled.addListener(() => {
     chrome.windows.create({
       type: "normal",
       url: "index.html",
       width: 400,
       height: 400,
     });
-  }
+    console.log("testing Chrome services works");
 });
+
 
 chrome.runtime.onConnect.addListener((port) => {
   console.log("[background.js] onConnect", port);

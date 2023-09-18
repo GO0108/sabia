@@ -6,15 +6,31 @@
 #root {
 
   width: 700px;
-  height: 400px;
+  height: 500px;
   font-family: 'Roboto', sans-serif;
+}
+
+.popupModal {
+  position: absolute;
+  left: 1px;
+}
+
+.main {
+  background-color: #1a1e2e;
+  
 }
 .cs-main-container{
   border: none !important;
+  border-radius: 20px;
+  background-color: #1a1e2e !important;
+
 }
 .cs-message-list {
   background-color: hwb(226 10% 82%) !important;
   padding-bottom: 30px !important;
+}
+.cs-border {
+  background-color: hwb(231 7% 88%) !important;
 }
 .cs-message__content {
   background-color: #2877EE !important;

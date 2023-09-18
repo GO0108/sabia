@@ -13,8 +13,12 @@
   "theme_color": "#000000",
   "background_color": "#ffffff",
   "permissions": [
-   "activeTab"
+   "activeTab",
+   "offscreen"
   ],
+  "background": {
+    "service_worker": "./static/js/background.js"
+  },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
