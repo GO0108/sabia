@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "default",
+  "rsc": true,
+  "tsx": true,
+  "tailwind": {
+    "config": "c:\\Users\\alano\\Downloads\\template-reactjs-chromeExtension\\tailwind.config.js",
+    "css": "styles/global.css",
+    "baseColor": "gray",
+    "cssVariables": false
+  },
+  "aliases": {
+    "components": "@/components",
+    "utils": "c:\\Users\\alano\\Downloads\\template-reactjs-chromeExtension\\lib\\utils.ts"
+  }
+}

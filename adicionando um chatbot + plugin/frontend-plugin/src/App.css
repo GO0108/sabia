@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+#root {
+
+  width: 700px;
+  height: 400px;
+  font-family: 'Roboto', sans-serif;
+}
+.cs-main-container{
+  border: none !important;
+}
+.cs-message-list {
+  background-color: hwb(226 10% 82%) !important;
+  padding-bottom: 30px !important;
+}
+.cs-message__content {
+  background-color: #2877EE !important;
+  color: #fff !important;
+  font-family: 'Roboto', sans-serif;
+}
+
+.cs-message-list__typing-indicator-container {
+  background-color: #2877EE !important;
+  color: #fff !important;
+  font-family: 'Roboto', sans-serif;
+}
+.cs-message-input {
+  background-color: #202534 !important;
+  border: #202534 !important;
+  padding: 20px !important;
+  box-shadow: 1px 19px 75px -28px rgba(255,255,255,1) !important;
+}
+
+.cs-message-input__content-editor-wrapper{
+  background-color: #10141F;
+  color: #fff !important;
+  font-family: 'Roboto', sans-serif;
+}
+
+.cs-message-input__content-editor {
+  background-color: #10141F;
+  color: #fff !important;
+  font-family: 'Roboto', sans-serif;
+}
+
+.cs-button {
+  color: #fff !important;
+}
