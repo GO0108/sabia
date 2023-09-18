@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "TESTE",
+  "description": "AQUI",
+  "version": "1.0",
+  "action": {
+    "default_title": "Hello Extensions",
+    "default_popup": "index.html",
+    "default_icon": "logo192.png"
+  },
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "permissions": [
+   "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["./static/js/content.js"]
+    }
+  ]
+}
