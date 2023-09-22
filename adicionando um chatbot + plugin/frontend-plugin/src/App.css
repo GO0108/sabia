@@ -25,6 +25,15 @@
   background-color: #1a1e2e !important;
 
 }
+
+.cs-message-input__content-editor{
+  color: #fff !important;
+}
+
+.cs-message-input__content-editor::before {
+  color: #fff !important;
+  opacity: 0.4 !important;
+}
 .cs-message-list {
   background-color: hwb(226 10% 82%) !important;
   padding-bottom: 30px !important;

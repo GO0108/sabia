@@ -6,7 +6,9 @@ export const getCurrentTabUrl = (
   chrome.tabs &&
     chrome.tabs.query(queryInfo, (tabs) => {
       callback(tabs[0].url);
+      console.log(tabs[0].url);
     });
+
 };
 
 export function getSearchQuery(webUrl: string){
