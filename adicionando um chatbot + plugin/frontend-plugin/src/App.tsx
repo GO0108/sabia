@@ -10,6 +10,8 @@ import { ChatBubbleBottomCenterTextIcon as Chat  } from '@heroicons/react/24/out
 import Popup from './components/Popup';
 import { getCurrentTabUId, getCurrentTabUrl, getSearchQuery, getUrlDomain } from "./chrome/utils";
 import { Textarea } from './components/Textarea';
+import { PhotoIcon } from '@heroicons/react/24/outline'
+import { Imagens } from './components/Imagens';
 
 interface query {
   query: string;
@@ -19,9 +21,13 @@ interface results {
   link: string;
 }
 
+interface Props {
+  readonly name: string;
+}
+
 function App() {
   const [url, setUrl] = useState('');
-  const [domain, setDomain] = useState('');
+  const [domain, setDomain] = useState<query | null>(null);
   const [search, setSearch] = useState([]);
 
   useEffect(()=> {
@@ -32,6 +38,7 @@ function App() {
 
   const sendwiki = async (query: query) => {
       const urlQuery = query
+      setDomain(urlQuery)
       let link = 'https://backend-flask-deploy.vercel.app/?url=' + urlQuery
         
         const res = await fetch(link, {
@@ -74,13 +81,22 @@ function App() {
                   </div>
                   }
                   <div className='text-xs flex flex-col items-start text-left'>
+                    
                     {search.map((item: results) => (
                     <p className='p-2 border border-gray-700 rounded-r-3xl m-2'>{item.text}{item.link}</p>
                     
-                  ))}</div> 
-                  
+                  ))}</div>
+            <div className='flex items-center flex-row'>
+            
+            
+            <PhotoIcon className='h-6 w-6'/>
+
                   {/*@ts-ignore**/}
             <MessageInput placeholder="Escreva o seu termo de busca aqui" onSend={sendwiki} attachButton={false}/>
+            
+            {domain != null ? <Imagens query={domain}/> : <></>}
+            
+            </div>
             </div>
             <div className='flex items-center flex-row'>
               <Popup/>
