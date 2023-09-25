@@ -52,7 +52,7 @@ function App() {
         setSearch(result)
   }
 
-  /** 
+  /** d
   fetch('http://127.0.0.1:5000/', {
     method: 'GET',
     headers: {
