@@ -100,9 +100,6 @@ function App() {
             </div>
             <div className='flex items-center flex-row'>
               <Popup/>
-              <Popup/>
-              <Popup/>
-              <Popup/>
             </div>
       </div>
     </>
