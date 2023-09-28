@@ -49,7 +49,7 @@ function App() {
   };
 
   return (
-    <div className="App rounded-2xl">
+    <div className="App rounded-2xl chatbot">
 
       <div style={{ position: 'relative', height: '300px', width: '500px' }}>
         <MainContainer>
@@ -60,6 +60,14 @@ function App() {
               typingIndicator={isTyping ? <TypingIndicator style={{backgroundColor:"rgba(25, 30, 46, 0.2)", color:"#fff"}} content="ChatGPT is typing" /> : null}
             >
               {messages.map((message: message, i) => (
+                  
+                message.role === "system"                ? 
+                <Message className="my-container message-response" key={i} model={{
+                  message: message.content,
+                  sender: message.role,
+                  direction: 1,
+                  position: 2
+                }} />:
                 <Message className="my-container" key={i} model={{
                   message: message.content,
                   sender: message.role,

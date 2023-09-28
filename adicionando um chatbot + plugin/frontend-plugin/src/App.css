@@ -10,10 +10,14 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.filldiv {
+  width: -webkit-fill-available;
+}
+
 .popupModal {
   position: absolute;
   left: 1px;
-} 
+}
 
 .main {
   background-color: #1a1e2e;
@@ -47,6 +51,16 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.cs-message__content .message-response  {
+  background: #242c38 !important;
+  color: #874141 !important;
+  font-family: 'Roboto', sans-serif;
+}
+
+.chatbot {
+  background-color: #202534 !important;
+}
+
 .cs-message-list__typing-indicator-container {
   background-color: #2877EE !important;
   color: #fff !important;
@@ -57,6 +71,7 @@
   border: #202534 !important;
   padding: 20px !important;
   box-shadow: 1px 19px 75px -28px rgba(255,255,255,1) !important;
+  width: -webkit-fill-available;
 }
 
 .cs-message-input__content-editor-wrapper{
